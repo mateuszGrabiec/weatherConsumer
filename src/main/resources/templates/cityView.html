@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<p>
+
+<h1 th:text="${cityWeather.getTitle()}" />
+<h2 th:text="${cityWeather.getConsolidatedWeather().get(0).getTheTemp()}" />
+<img th:width="300px" th:src="${cityWeather.getConsolidatedWeather().get(0).getImgSrc()}" />
+</body>
+</html>
